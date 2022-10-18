@@ -12,7 +12,7 @@
 
 <title>Responsive Chat Box Design | BlaizingInfernoDragon123</title>
 
-<link rel="stylesheet" href=".css/style.css">
+<link rel="stylesheet" href="./css/style.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
@@ -36,7 +36,9 @@
 
 <div class="head-text">
 
-Let's chat? - Online
+Let's chat?
+ 
+status: Online
 
 </div>
 
@@ -48,29 +50,29 @@ Please fill out the form below to start chatting with the next available agent.
 
 </div>
 
-<form action="" method="post" enctype="text/plain" >
+<form action="mailto:someone@gmail.com" method="post" enctype="text/plain" >
 
 <div class="field">
 
-<input type="text" placeholder="Your Name" required>
+<input type="text" name="name" placeholder="Your Name" required>
 
 </div>
 
 <div class="field">
 
-<input type="email" placeholder="Email Address" required>
+<input type="email" name="email" placeholder="Email Address" required>
 
 </div>
 
 <div class="field textarea">
 
-<textarea cols="30" rows="10" placeholder="Explain your queries.." required></textarea>
+<textarea cols="30" rows="10" name="query" placeholder="Explain your queries.." required></textarea>
 
 </div>
 
 <div class="field">
 
-<button type="submit">Start Chat</button>
+<button type="submit" onclick="showAlert()">Start Chat</button>
 
 </div>
 
@@ -79,6 +81,12 @@ Please fill out the form below to start chatting with the next available agent.
 </div>
 
 </div>
+
+<script>
+  function showAlert() {
+    alert ("Thanks for informing us your query now you will be redirected to gmail or any other email app and would just have to send the mail from there as the body is already composed only!");
+  }
+  </script>
 
 </body>
 
