@@ -2,6 +2,7 @@ function setCookie(Default, value, options = {}) {
 
   options = {
     path: 'https://blaizinginfernodragon123.github.io/login-form-UI-using-only-html-css-and-javascript-/',
+    domain= https://blaizinginfernodragon123.github.io/login-form-UI-using-only-html-css-and-javascript-/
     // add other defaults here if necessary
     ...options
   };
